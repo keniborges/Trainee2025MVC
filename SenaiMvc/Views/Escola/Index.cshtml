@@ -1,0 +1,35 @@
+﻿@using SenaiMvc.Models.Escola
+
+@model List<EscolaModel>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <a class="btn btn-primary" type="button" asp-controller="Escola" asp-action="Form">Novo</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var escola in Model)
+            {
+                <tr>
+                    <th scope="row">@escola.Id</th>
+                    <td>@escola.Nome</td>
+                    <td class="text-end">
+                        <a class="btn" type="button" href="/Escola/Editar/@escola.Id">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+                        <a class="btn" type="button" href="/Escola/Excluir/@escola.Id">
+                            <i class="bi bi-trash2"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

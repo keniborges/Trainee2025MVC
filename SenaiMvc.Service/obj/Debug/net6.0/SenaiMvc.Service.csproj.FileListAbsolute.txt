@@ -1,0 +1,12 @@
+D:\Workspace\Trainee2025\SenaiMvc.Service\bin\Debug\net6.0\SenaiMvc.Service.deps.json
+D:\Workspace\Trainee2025\SenaiMvc.Service\bin\Debug\net6.0\SenaiMvc.Service.dll
+D:\Workspace\Trainee2025\SenaiMvc.Service\bin\Debug\net6.0\SenaiMvc.Service.pdb
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\SenaiMvc.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\SenaiMvc.Service.AssemblyInfoInputs.cache
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\SenaiMvc.Service.AssemblyInfo.cs
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\SenaiMvc.Service.csproj.CoreCompileInputs.cache
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\SenaiMvc.Service.dll
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\refint\SenaiMvc.Service.dll
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\SenaiMvc.Service.pdb
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\ref\SenaiMvc.Service.dll
+D:\Workspace\Trainee2025\SenaiMvc.Service\obj\Debug\net6.0\SenaiMvc.Service.csproj.AssemblyReference.cache

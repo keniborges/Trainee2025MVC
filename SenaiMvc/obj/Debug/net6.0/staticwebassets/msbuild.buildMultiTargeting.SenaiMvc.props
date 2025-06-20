@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SenaiMvc.props" />
+</Project>

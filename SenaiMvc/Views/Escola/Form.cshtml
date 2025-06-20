@@ -1,0 +1,75 @@
+﻿@using SenaiMvc.Models.Escola
+
+@model EscolaModel
+@*
+@{
+	var estados = (List<EstadoModel>)ViewBag.Estados;
+} *@
+
+<p class="h2">Escola</p>
+
+<form method="post" asp-action="Form" asp-controller="Escola">
+
+	<div class="mb-3">
+		<input type="hidden" asp-for="Id">
+
+		<label class="form-label">Nome Escola</label>
+		<input type="text" class="form-control" asp-for="Nome">
+		@* @Html.TextBoxFor(m => m.Nome, new { @class = "form-control" }) *@
+		@Html.ValidationMessageFor(m => m.Nome, "", new { @class = "text-danger" })
+	</div>
+
+	<div class="row">
+		<div class="col-md-5">
+			<label class="form-label">Rua</label>
+			<input type="text" class="form-control" asp-for="Endereco.Rua">
+		</div>
+		<div class="col-md-5">
+			<label class="form-label">Bairro</label>
+			<input type="text" class="form-control" asp-for="Endereco.Bairro">
+		</div>
+		<div class="col-md-2">
+			<label class="form-label">Número</label>
+			<input type="number" class="form-control" asp-for="Endereco.Numero">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<label class="form-label">Estado</label>
+			<input type="text" class="form-control" asp-for="Endereco.Estado">
+		</div>
+		<div class="col-md-6">
+			<label class="form-label">Cidade</label>
+			<input type="text" class="form-control" asp-for="Endereco.Cidade">
+		</div>
+	</div>
+
+	</br>
+
+	@* <div class="row">
+	<div class="col-md-6">
+	<label asp-for="Endereco.Uf" class="form-label">Estados</label>
+	<select class="form-select" asp-for="Endereco.Uf">
+	<option value="">Selecione o Estado</option>
+	@foreach (var estado in estados.OrderBy(c => c.Uf))
+	{
+	<option value="@estado.Uf">@estado.Uf</option>
+	}
+	</select>
+	<span class="invalid-feedback" asp-validation-for="Endereco.Uf">
+	</span>
+	</div>
+	<div class="col-md-6">
+	<label asp-for="Endereco.Cidade" class="form-label"></label>
+	<select class="form-select" asp-for="Endereco.Cidade">
+	</select>
+	<span class="invalid-feedback" asp-validation-for="Endereco.Cidade">
+	</span>
+	</div>
+	</div> *@
+
+	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+		<button class="btn btn-primary" type="submit">Salvar</button>
+	</div>
+
+</form>
