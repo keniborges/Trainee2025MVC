@@ -295,6 +295,8 @@
           "System.Text.Encoding.CodePages.Reference": "6.0.0.0",
           "System.Text.Encoding": "6.0.0.0",
           "System.Text.Encoding.Extensions": "6.0.0.0",
+          "System.Text.Encodings.Web.Reference": "6.0.0.0",
+          "System.Text.Json.Reference": "6.0.0.0",
           "System.Text.RegularExpressions": "6.0.0.0",
           "System.Threading.Channels": "6.0.0.0",
           "System.Threading": "6.0.0.0",
@@ -560,9 +562,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.3624.51421"
           }
-        },
-        "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {}
         }
       },
       "System.Text.Json/6.0.11": {
@@ -571,9 +570,6 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.3624.51421"
           }
-        },
-        "compile": {
-          "lib/net6.0/System.Text.Json.dll": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {},
@@ -582,7 +578,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "SenaiMvc.Service.dll": {}
+          "SenaiMvc.Service.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "SenaiMvc.Service.dll": {}
@@ -2139,6 +2138,18 @@
       "System.Text.Encoding.Extensions/6.0.0.0": {
         "compile": {
           "System.Text.Encoding.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.Encodings.Web.Reference/6.0.0.0": {
+        "compile": {
+          "System.Text.Encodings.Web.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.Json.Reference/6.0.0.0": {
+        "compile": {
+          "System.Text.Json.dll": {}
         },
         "compileOnly": true
       },
@@ -3741,6 +3752,16 @@
       "sha512": ""
     },
     "System.Text.Encoding.Extensions/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Encodings.Web.Reference/6.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Json.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

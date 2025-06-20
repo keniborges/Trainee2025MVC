@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SenaiMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5a3aef7017eb9748ff35302e12a5c83441a38ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("SenaiMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SenaiMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

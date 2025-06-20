@@ -23,53 +23,44 @@
 		<div class="col-md-5">
 			<label class="form-label">Rua</label>
 			<input type="text" class="form-control" asp-for="Endereco.Rua">
+			@Html.ValidationMessageFor(m => m.Endereco.Rua, "", new { @class = "text-danger" })
 		</div>
 		<div class="col-md-5">
 			<label class="form-label">Bairro</label>
 			<input type="text" class="form-control" asp-for="Endereco.Bairro">
+			@Html.ValidationMessageFor(m => m.Endereco.Bairro, "", new { @class = "text-danger" })
 		</div>
 		<div class="col-md-2">
 			<label class="form-label">Número</label>
 			<input type="number" class="form-control" asp-for="Endereco.Numero">
+			@Html.ValidationMessageFor(m => m.Endereco.Numero, "", new { @class = "text-danger" })
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-6">
 			<label class="form-label">Estado</label>
-			<input type="text" class="form-control" asp-for="Endereco.Estado">
+			<select asp-for="Endereco.Estado" asp-items="Model.Estados" onchange="escola.carregarCidadesPorUF(this.value)" class="form-control">
+				<option value="">-- Selecione um estado --</option>
+			</select>
+			@Html.ValidationMessageFor(m => m.Endereco.Estado, "", new { @class = "text-danger" })
 		</div>
 		<div class="col-md-6">
 			<label class="form-label">Cidade</label>
-			<input type="text" class="form-control" asp-for="Endereco.Cidade">
+			<select asp-for=Endereco.Cidade asp-items="Model.Cidades" class="form-control">
+				<option value="">-- Selecione a cidade --</option>
+			</select>
+			@Html.ValidationMessageFor(m => m.Endereco.Cidade, "", new { @class = "text-danger" })
 		</div>
 	</div>
 
 	</br>
-
-	@* <div class="row">
-	<div class="col-md-6">
-	<label asp-for="Endereco.Uf" class="form-label">Estados</label>
-	<select class="form-select" asp-for="Endereco.Uf">
-	<option value="">Selecione o Estado</option>
-	@foreach (var estado in estados.OrderBy(c => c.Uf))
-	{
-	<option value="@estado.Uf">@estado.Uf</option>
-	}
-	</select>
-	<span class="invalid-feedback" asp-validation-for="Endereco.Uf">
-	</span>
-	</div>
-	<div class="col-md-6">
-	<label asp-for="Endereco.Cidade" class="form-label"></label>
-	<select class="form-select" asp-for="Endereco.Cidade">
-	</select>
-	<span class="invalid-feedback" asp-validation-for="Endereco.Cidade">
-	</span>
-	</div>
-	</div> *@
 
 	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 		<button class="btn btn-primary" type="submit">Salvar</button>
 	</div>
 
 </form>
+
+@section Scripts {
+	<script src="~/js/escola.js"></script>
+}

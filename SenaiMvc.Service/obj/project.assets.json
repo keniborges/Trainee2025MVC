@@ -55,19 +55,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kenib\\.nuget\\packages\\": {}
+    "C:\\Users\\keni\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\Trainee2025\\SenaiMvc.Service\\SenaiMvc.Service.csproj",
+      "projectUniqueName": "D:\\Workspace\\Testes\\Trainee2025\\Mvc\\SenaiMvc.Service\\SenaiMvc.Service.csproj",
       "projectName": "SenaiMvc.Service",
-      "projectPath": "D:\\Workspace\\Trainee2025\\SenaiMvc.Service\\SenaiMvc.Service.csproj",
-      "packagesPath": "C:\\Users\\kenib\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\Trainee2025\\SenaiMvc.Service\\obj\\",
+      "projectPath": "D:\\Workspace\\Testes\\Trainee2025\\Mvc\\SenaiMvc.Service\\SenaiMvc.Service.csproj",
+      "packagesPath": "C:\\Users\\keni\\.nuget\\packages\\",
+      "outputPath": "D:\\Workspace\\Testes\\Trainee2025\\Mvc\\SenaiMvc.Service\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kenib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\keni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -92,7 +97,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net6.0": {
@@ -119,7 +125,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

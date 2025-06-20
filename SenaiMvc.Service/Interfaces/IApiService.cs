@@ -8,5 +8,7 @@
 
 		Task<bool> DeleteAsync(string endpoint);
 
+		Task<List<T>> PegarEstados<T>();
+
     }
 }
